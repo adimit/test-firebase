@@ -1,0 +1,17 @@
+{
+  "name": "firebase-test-case",
+  "version": "1.0.0",
+  "description": "Test case for Firebase & Firefox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adimit/test-firebase"
+  },
+  "scripts": {
+    "test": "web-ext -s . run --verbose"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "web-ext": "^2.0.0"
+  },
+  "dependencies": {}
+}

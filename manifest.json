@@ -1,0 +1,32 @@
+{
+  "description": "Firebase & Firefox test case",
+  "homepage_url": "https://github.com/adimit/test-firebase",
+  "manifest_version": 2,
+  "name": "firebase-test-case",
+  "version": "1.0.0",
+
+  "icons": {
+    "64": "icons/logo-64.png"
+  },
+
+  "browser_action": {
+    "browser_style": true,
+
+    "default_icon": {
+      "64": "icons/logo-64.png"
+    }
+  },
+
+  "background": {
+    "scripts": [
+      "firebase.js", "background.js"
+    ]
+  },
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}
